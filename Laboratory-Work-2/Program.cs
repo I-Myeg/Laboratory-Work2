@@ -1,9 +1,20 @@
-﻿using System;
+using System;
 
 namespace Laboratory_Work_2
 {
     class Program
     {
+        
+        static void Main()
+        {
+            int[] inputData = new int[] { -2, 45, 5, -12, 10 };
+            OutputData(inputData);
+
+            SquaresAndSort(inputData, 0, inputData.Length - 1);
+
+            OutputData(inputData);
+        }
+        
         static void OutputData(int[] temp)
         {
             Console.WriteLine(string.Join(",", temp));
@@ -47,16 +58,6 @@ namespace Laboratory_Work_2
         {
             Squares(temp);
             Sort(temp, first, last);
-        }
-
-        static void Main()
-        {
-            int[] inputData = new int[] { -2, 45, 5, -12, 10 };
-            OutputData(inputData);
-
-            SquaresAndSort(inputData, 0, inputData.Length - 1);
-
-            OutputData(inputData);
         }
     }
 }
