@@ -1,1 +1,2 @@
-# Laboratory-Work2
+Алгоритмическая сложность:
+O(n+n*logn)
